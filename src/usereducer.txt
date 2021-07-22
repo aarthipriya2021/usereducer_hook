@@ -1,0 +1,25 @@
+Hooks:
+     -	Hooks are the functions which "hook into" React state and lifecycle features from        
+            function  components	.
+    -	React offers a number of built-in Hooks. A few of these include  useState(),    
+         useEffect(),  useContext(), useReducer(),    and useRef() 
+
+Rules:
+    -   Never call Hooks from inside a loop, condition or nested function
+    -   Hooks should sit at the top-level of your component
+    -   Only call Hooks from React functional components
+    -   Never call a Hook from a regular function
+    -   Hooks can call other Hooks
+
+usereducer:
+    -   useReducer is usually preferable to useState when you have 
+        complex state logic that involves multiple sub-values or 
+        when the next state depends on the previous one. 
+    -   useReducer also lets you optimize performance for components 
+        that trigger deep updates because you can pass dispatch down 
+        instead of callbacks.
+    -   Reducers are simple, predictable (pure) functions that take a 
+        previous state object and an action object and return a new state object.
+
+syntax:
+    const [state, dispatch] = useReducer(reducer, initialState, lazyInitFunction)
